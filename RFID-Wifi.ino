@@ -3,8 +3,8 @@
 #include <MFRC522.h>
 
 // Configuración de la red WiFi
-const char* ssid = "Tu_SSID";
-const char* password = "Tu_Password";
+const char* ssid = "BALLESTEROS_5G";
+const char* password = "1720694197";
 
 // Configuración del lector RFID
 #define SS_PIN D8
@@ -14,7 +14,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 WiFiClient client;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   SPI.begin();
   mfrc522.PCD_Init();
 
